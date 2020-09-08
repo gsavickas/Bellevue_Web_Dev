@@ -1,3 +1,10 @@
+:root{
+    --mainColor: #000;
+    --secondaryColor: grey;
+    --accentColor: #B82A34;
+
+}
+
 .heading{
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -12,8 +19,26 @@
     text-decoration-line: underline;
     padding-bottom: 1em;
 }
+h2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-emphasis: bold;
+    font-size: 2.7em;
+    font-weight: 500f;
+}
+p, li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.main-content{
+    padding: 16px;
+    margin-top: 60px;
+    height: auto;
+}
 .container{
     align-content: center;
+    width: 95%;
 }
 .background{
     background-image: url("resources/nightScape.jpg");
@@ -23,15 +48,22 @@
     background-position: 50% 50%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
+    min-height: fit-content;
 }
 
-header{
-    align-content: center;
+.navbar{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100;
+    margin-top: .5em;
+    padding: 1em 1em 1em 1em;
+    background-color: var(--mainColor);
 }
 
 .navbar-button{
     padding: 1em 1em 1em 1em;
-        background-color: #c21616;
+        background-color: var(--accentColor);
         border: none;
         color: white;
         padding: 15px 32px;
@@ -39,14 +71,21 @@ header{
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        border-radius: 50px;
 }
 
 footer{
+    display: block;
     padding: 10em 10em 10em 10em;
-    text-align: center;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
 }
 
 .background-longTrain{
+    display: block;
+    max-width: 100%;
+    height: auto;
     background-image: url("resources/longTrain.jpg");
     background-color: #cccccc;
     background-size: cover;
@@ -54,16 +93,22 @@ footer{
     background-position: 50% 50%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
+    max-width: 30em;
 }
 
 .background-workSite{
+    display: block;
+    max-width: 100%;
+    height: auto;
     background-image: url("resources/workSite.jpg");
     background-color: #cccccc;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 80% 80%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
+    min-height: 25em;
+    max-width: 30em;
 }
 
 .background-gradPic{
@@ -71,25 +116,31 @@ footer{
     background-color: #cccccc;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 25% 25%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
+    min-height: 20em;
+    max-width: 30em;
 }
 .background-bootCamp{
     background-image: url("resources/bootCamp.png");
     background-color: #cccccc;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 15% 15%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
+    max-width: 30em;
 }
 .background-dressBlues{
     background-image: url("resources/dressBlues.jpg");
     background-color: #cccccc;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: 15% 15%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
+    min-height: 20em;
+    max-width: 30em;
 }
+
