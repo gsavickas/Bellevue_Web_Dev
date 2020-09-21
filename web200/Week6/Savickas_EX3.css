@@ -1,0 +1,83 @@
+.into{
+    
+}
+h1, h2{
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+h1{
+    font-size: 3.815em;
+    text-transform: uppercase;
+    margin: 0%;
+    padding-bottom: .5em;
+}
+h2{
+    font-size: 3.052em;
+    font-weight: 500;
+    margin: 0%;
+    padding-bottom: .3em;
+}
+h3{
+    font-weight: 500;
+}
+li{
+    font-weight: 300;
+}
+p{
+    font-size: 16px;
+    font-family: 'Quattrocento', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+.unique{
+    background-color: yellow;
+}
+address{
+    font-family: 'Quattrocento', Georgia, "Times New Roman", serif;
+    font-size: .8em;
+    padding-bottom: .5em;
+}
+.funny:hover :visited{
+    font-size: 1em;
+    font-weight: bold;
+}
+.sentence{
+    font-size: 1.2em;
+}
+.List-box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Oswald', Verdana, "Arial", sans-serif;
+}
+.left{
+    /* flex-direction: row-reverse; */
+    align-content: left;
+    width: 45%;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style: upper-roman;
+}
+.right{
+    /* flex-direction: row; */
+    align-content: right;
+    width: 45%;
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+.banner{
+    margin-top: 60%;
+    width: 100%;   
+    font-family: 'Oswald', Verdana, "Arial", sans-serif;
+    float: right;
+    margin-bottom: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
