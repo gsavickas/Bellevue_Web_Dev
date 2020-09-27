@@ -1,0 +1,37 @@
+
+:root {
+    --main-bg-color: brown;
+    --p1: rgba(247, 112, 24, 20%);
+    --p2: rgba(185, 63, 8, 1);
+  }
+  body{
+     background-color: var(--p1);
+  }
+h1, h3{
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: var(--p2);
+}
+
+#image-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10%;
+}
+
+.card{
+    width: 400px;
+    height: 350px;
+    border: solid var(--p2);
+    border-radius: 15px;
+}
+figcaption{
+    text-align: center;
+    font-style: italic;
+    font-size: .75em;
+    color: var(--p2);
+}
+.imageBox{
+    padding: 5px;
+}
