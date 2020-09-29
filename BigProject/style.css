@@ -93,7 +93,7 @@ section{
 }
 /* Todo: add on hover animation shadow for these buttons */
 .navbar-button{
-    padding: 1em 1em 1em 1em;
+        padding: 1em 1em 1em 1em;
         background-color: var(--accentColor);
         border: none;
         color: white;
@@ -103,6 +103,7 @@ section{
         display: inline-block;
         font-size: 16px;
         border-radius: 50px;
+        font-family: 'Roboto', sans-serif;
 }
 footer{
     padding: 5em 5em ;
