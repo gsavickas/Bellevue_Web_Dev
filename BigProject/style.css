@@ -51,7 +51,7 @@ p, li{
     border: 1px solid black;
     background-color: var(--secondaryColor);
 }
-.text-left{
+.list-left{
     text-align: left;
     list-style-position: outside;
     padding-left: 20em;
