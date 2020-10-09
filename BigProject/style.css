@@ -31,7 +31,7 @@ h2{
     background-color: var(--mainColor);
     border:2px solid var(--accentColor);
 }
-p, li{
+h1, li{
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     font-weight: 900;
