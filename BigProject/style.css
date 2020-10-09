@@ -25,14 +25,18 @@ h2{
     text-align: center;
     font-family: 'Roboto', sans-serif;
     text-emphasis: bold;
-    font-size: 2.7em;
-    font-weight: 500f;
+    font-size: 4em;
+    font-weight: 900;
+    color: whitesmoke;
+    background-color: var(--mainColor);
+    border:2px solid var(--accentColor);
 }
 p, li{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 900;
 }
+/* Div management */
 .main-container{
     display: grid;
     grid-template-columns: auto;
@@ -55,10 +59,15 @@ p, li{
     text-align: left;
     list-style-position: outside;
     padding-left: 20em;
+    padding-top: 6em;
+    padding-bottom: 3em;
+    padding-right: 2em;
+}
+.list-left{
+    padding-left: 25%;
 }
 
-/* This is where all the bacground piture elements are defined */
-
+/* All background images */
 .background{
     background-image: url("resources/nightScape.jpg");
     background-color: #cccccc;
@@ -67,10 +76,7 @@ p, li{
     background-position: 50% 50%;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
-    /* min-height: fit-content; */
     border: 2px solid black;
-    min-width: 50%;
-    width: 50em;
     height: 20em;
 }
 section{
@@ -86,12 +92,10 @@ section{
     position: fixed;
     top: 0;
     width: 100%;
-    /* margin-top: .5em; */
     padding: .5em;
     background-color: var(--mainColor);
     left: 0;
 }
-/* Todo: add on hover animation shadow for these buttons */
 .navbar-button{
         padding: 1em 1em 1em 1em;
         background-color: var(--accentColor);
@@ -116,14 +120,11 @@ footer{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    /* margin-top: .5em; */
     padding: .5em;
-    /* background-color: var(--mainColor); */
 }
 
+
 .background-longTrain{
-    /* display: block; */
-    max-width: 100%;
     height: auto;
     background-image: url("resources/longTrain.jpg");
     background-color: #cccccc;
@@ -135,11 +136,9 @@ footer{
     margin-bottom: 0em;
     max-width: 30em;
     border: 2px solid black;
-    min-width: 100%;
 }
 
 .background-workSite{
-    /* display: block; */
     max-width: 100%;
     height: auto;
     background-image: url("resources/workSite.jpg");
@@ -153,7 +152,6 @@ footer{
     min-height: 25em;
     max-width: 30em;
     border: 2px solid black;
-    min-width: 50%;
 }
 
 .background-gradPic{
@@ -166,21 +164,32 @@ footer{
     margin: 1em 1em 1em 1em;
     min-height: 20em;
     max-width: 30em;
-    /* flex-direction: row-reverse; */
     border: 2px solid black;
-    /* min-width: 50%; */
 }
 .background-bootCamp{
     background-image: url("resources/bootCamp.png");
     background-color: #cccccc;
     background-size: cover;
-    background-position: top;
+    background-position: top right;
     background-repeat: no-repeat;
     padding: 10em 10em 10em 10em;
     margin: 1em 1em 1em 1em;
     height: 12em;
     border: 2px solid black;
-    min-width: 100%;
+}
+.background-bootCamp2{
+    background-image: url("resources/bootCamp2.png");
+    background-color: #cccccc;
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 10em 10em 10em 10em;
+    margin: 1em 1em 1em 1em;
+    height: 12em;
+    border: 2px solid black;
+    float: right;
+    padding-left: 2px;
+    margin-left: auto;
 }
 .background-dressBlues{
     background-image: url("resources/dressBlues.jpg");
@@ -193,6 +202,75 @@ footer{
     min-height: 20em;
     max-width: 30em;
     border: 2px solid black;
-    /* min-width: 50%; */
 }
+/* This is picture width */
+.Pic-w-half{
+    width: 50%;
+}
+.Pic-w-full{
+    width: 100%;
+}
+/* Media query to make it mobile friendly */
 
+@media only screen and (max-width: 800px){
+    section{
+        display: grid;
+        grid-template-columns: repeat(auto);
+        width: 100%;
+    }
+    .main-content{
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    .list-left{
+        padding-left: 25%;
+    }
+    .text-left{
+        text-align: left;
+        list-style-position: outside;
+        padding-left: 12em;
+        padding-top: 6em;
+        padding-bottom: 3em;
+        padding-right: 12em;
+        font-size: .5em;
+    }
+    li{
+        font-size: 2em;
+    }
+    .Pic-w-half{
+        width: 0%;
+    }
+    footer{
+        width: 50%;
+        font-size: .5em;
+        padding: 5em 5em;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: .5em;
+    }
+    .navbar{
+        width: auto;
+    }
+    .background-bootCamp2{
+        background-image: url("resources/bootCamp2.png");
+        background-color: #cccccc;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        padding: 10em 10em 10em 10em;
+        margin: 1em 1em 1em 1em;
+        height: 12em;
+        border: 2px solid black;
+        float: right;
+        padding-left: none;
+        margin-left: auto;
+    }
+}
