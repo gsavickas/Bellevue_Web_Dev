@@ -273,4 +273,18 @@ footer{
         padding-left: none;
         margin-left: auto;
     }
+    .navbar-button{
+        padding: .5em .5em .5em .5em;
+        background-color: var(--accentColor);
+        border: none;
+        color: white;
+        padding: 1em 1em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        border-radius: 25px;
+        font-family: 'Roboto', sans-serif;
+        width: 6.8em;
+}
 }
