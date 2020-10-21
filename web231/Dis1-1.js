@@ -3,7 +3,8 @@
 ; Author: Grayton Savickas
 ; Date: 21 Oct 2020
 ; Modified By: N/A
-; Description: This program demonstrates the; use of JavaScript types, values, and 
+; Description: This program demonstrates the
+; use of JavaScript types, values, and 
 ; and variables in an application.
 ;===========================================*/
 // variable to store the value of 45 
