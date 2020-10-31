@@ -62,7 +62,7 @@ console.log("\n");
 * Response: returns int
 * Description: Returns a integer parsed from the string parameter
 */
-function convertToint(string){
+function convertToInt(string){
   x = parseInt(string);
   return x
 }
@@ -77,6 +77,6 @@ function convertToFloat(string){
   x = parseFloat(string)
   return x
 }
-var convertTointTest = convertToint("27 years old");
+var convertToIntTest = convertToInt("27 years old");
 var convertToFloatTest = convertToFloat("10000 dollars");
-console.log("I am " + convertTointTest + " years old and my savings account goal is " + convertToFloatTest)
+console.log("I am " + convertToIntTest + " years old and my savings account goal is " + convertToFloatTest)
