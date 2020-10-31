@@ -1,9 +1,9 @@
 /*
 ============================================
 ; Title:  header.js
-; Author: Grayton Savickas
+; Author: Professor Krasso
 ; Date:   31 Oct 2020
-; Modified By: <Your name>
+; Modified By: Grayton Savickas
 ; Description: Displays a formatted header
 ;===========================================
 */
