@@ -38,7 +38,7 @@ var testVar6 = "Train";
 /**
 * Params: arg1, arg2
 * Response: returns boolean
-* Description: Returns true if arg1 and arg2 are === equal
+* Description: Returns true if arg1 and arg2 are === equal. Returns false if they are not.
 */
 function match(arg1, arg2){
   if (arg1 === arg2)
