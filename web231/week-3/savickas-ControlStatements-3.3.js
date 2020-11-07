@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  Pattern Matching Function
+; Title:  3.3
 ; Author: Professor Krasso
 ; Date:   31 Oct 2020
 ; Modified By: Grayton Savickas
@@ -8,7 +8,7 @@
 ;===========================================
 */
 const header = require('../week-2/Savickas-header')
-var headerValue = header.display("Grayton", "Savickas", "Pattern Matching Function")
+var headerValue = header.display("Grayton", "Savickas", "3.3")
 console.log(headerValue);
 
 /*
@@ -20,7 +20,7 @@ console.log(headerValue);
   The enter key was pressed
 */
 
-let eventKeyCode = 32
+let eventKeyCode = 13
 
 if (eventKeyCode === 13) {
   console.log('The enter key was pressed.')
@@ -34,6 +34,7 @@ if (eventKeyCode === 13) {
   console.log('Unrecognized key.')
 }
 
+// Switch Statement evaluates the given event stored in eventKeyCode and compares it to 4 different cases. If none match console.log Unrecognized key
 switch(eventKeyCode) {
   case 13:
     console.log('The enter key was pressed.')
