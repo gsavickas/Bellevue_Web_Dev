@@ -4,7 +4,7 @@
 ; Author: Professor Krasso
 ; Date:   31 Oct 2020
 ; Modified By: Grayton Savickas
-; Description: Displays a formatted header
+; Description: Uses Control statements to compare values
 ;===========================================
 
   // output from the match() function
