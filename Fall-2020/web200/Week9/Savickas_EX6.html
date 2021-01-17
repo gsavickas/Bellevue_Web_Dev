@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB 200 Fundamentals of Web Development</title>
+    <link rel="stylesheet" href="Savickas_EX6.css">
+</head>
+<header> 
+    <h1>Assignment 8.3: Build a Web Page - Part 6</h1>
+</header>
+<body>
+    
+    <div id="navbar">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <div id="container">
+        <div class="card">
+            <div class="card-title"> Book Entry Form </div>
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="txtBookName">Book Name:</label>
+                            <input class="input" id="txtBookName" type="text" name="txtBookName">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <button type="submit" class="btn btn-primary full-width">Create Book</button>
+                    </div>
+
+                </div>
+            
+        </div>
+        <br>
+        <br>
+        <div class="card">
+            <div class="card-title"> Top 5 Favorite Books </div>
+                <div class="card-content">
+                        <table id="books">
+                                <th>Book Id</th>
+                                <th>Book Name</th>
+                            <tr>
+                                <td>100</td>
+                                <td>Slaughterhouse-Five</td>
+                            </tr>
+                            <tr>
+                                <td>101</td>
+                                <td>Blown to Bits</td>
+                            </tr>
+                            <tr>
+                                <td>102</td>
+                                <td>Things Every Designer Needs to Know About People</td>
+                            </tr>
+                            <tr>
+                                <td>103</td>
+                                <td>Hard Contact: Star Wars Legends: Clone Commando</td>
+                            </tr>
+                            <tr>
+                                <td>104</td>
+                                <td>Sun Tzu The Art of War: Illustrated</td>
+                            </tr>
+                        </table>
+                </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="https://www.bellevue.edu/" target="_blank">Bellevue University</a>
+                &copy; Copyright
+                <script> 
+                    document.write(new Date().getFullYear()) 
+                </script>
+            </p>
+    </footer>
+</body>
+</html>
